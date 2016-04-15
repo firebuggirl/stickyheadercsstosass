@@ -1,0 +1,33 @@
+footer{
+  @extend %flex;
+  @extend %flex_column;
+  background-color: #F8FBF5;
+  @extend %centered;
+
+}
+footer:hover{
+
+  border-bottom: 10px solid $red;
+}
+
+h2.contact{
+  font-size: 18px;
+  margin-top: 45px;
+}
+p.contact{
+  @extend %centered;
+  @include flex_align_center;
+  margin-right: 10px;
+}
+
+.footer-nav{
+  display: none;
+}
+
+.end{
+  @extend %flex;
+  @extend %flex_row;
+  @extend %flex_space_between;
+  color: $red;
+  margin-top: 25px;
+}

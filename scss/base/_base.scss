@@ -1,0 +1,57 @@
+/* Global Layout Set-up */
+* {
+  box-sizing: border-box;
+}
+
+/* Create and include
+button class for ui-colors map in _colors.scss
+Classes created:
+.btn--default
+.btn--success
+.btn--error
+.btn--warning
+.btn--info
+*/
+
+.btn{
+  @include bg-colors($ui-colors);
+}
+
+
+body{
+  background-color: palette(grey, xx-light); /* From line 60 _colors.scss -Color Palette Modifiers*/
+  @include grey_ltr;
+  line-height: ($base__line/$base__font-size);/* Calculate line height based on font-size*/
+
+      a{
+         text-decoration: none;
+        }
+        .name a,
+        .main-nav a,
+        h2,
+        h3{
+            font-family: $stack-garamond;
+            color: $red;
+        }
+    }
+
+    #top:hover{
+      @include link_hover;
+    }
+
+.main-nav {
+  @extend %centered;
+  margin-right: em(40px);
+}
+  .nav {
+    @include text(18px, NULL, 400);
+    list-style-type: none;
+        a:hover{
+          color: lighten($red, 15%);
+        }
+}
+
+.top > a:nth-child(1){
+  color: $red;
+  font-size: 13px;
+}

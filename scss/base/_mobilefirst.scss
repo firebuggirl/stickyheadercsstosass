@@ -1,0 +1,80 @@
+#top:hover{
+  -webkit-transform: scale3d(1.1, 1.1, 1.1);
+   transform: scale3d(1.1, 1.1, 1.1);
+}
+
+
+#wrapper{
+  max-width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+
+}
+
+
+img{
+  max-width: 95%;
+  margin-top: 25px;
+  @include img_border;
+  &:hover{
+    opacity: 0.7;
+  }
+}
+
+/* #toggle_class keeps margin between nav and section flush
+   when nav is toggled on and off with sticky header nav */
+
+#toggle_class{
+  content: "";
+  height: 0px;
+  margin-top: -170px;
+  display: none;
+}
+
+
+section {
+    background-color: #F8FBF5;
+    border-top: 6px solid $red;
+    line-height: ($base__line/$base__font-size);/* Calculate line height based on font-size*/
+    margin-top: 300px;
+    @extend %flex;
+    @extend %flex_column;
+    @extend %flex_align_items_center;
+    &:hover{
+        border-top: 10px solid $red;
+    }
+}
+
+p{
+  @extend %centered;
+  @include text(1em, 1.4, lighter);
+  max-width: 90%;
+  margin-left: 10px;
+}
+#intro1{
+  @include flex_align_center;
+  width: 340px;
+
+}
+.intro2 {
+	margin-top: 20px;
+	color: black;
+	padding: 8px 8px;
+  /*margin-right: 10px;*/
+  @include flex_align_center;
+}
+
+
+.portfolio{
+  @extend %centered;
+  @include text(12px, $color:$red);
+  margin-bottom: 30px;
+  margin: 40px auto;
+
+}
+
+
+.cardflex{
+  @extend %centered;
+  flex-basis: 90%;
+}

@@ -1,0 +1,113 @@
+@include bp(fullscreen) {
+
+  .name {
+  	margin-top: 40px;
+
+  }
+#top{
+  @include flex;
+  @include flex_align_start;
+  margin-left: em(40px);
+}
+#top:hover{
+  -webkit-transform: none;
+   transform: none;
+}
+
+
+.main-nav .nav {
+  @include flex_justify_end;
+	font-weight: 600;
+  font-size: 20px;
+	/*margin-right: em(15px);*/
+  margin-left: 30px;
+	margin-top: -65px;
+
+}
+
+.main-nav .nav > li {
+	padding-right: 15px;
+	padding-left: 20px;
+  margin-top: 10px;
+}
+
+ul.nav {
+    @include flex_row;
+}
+
+#toggle_class{
+  display: none;
+}
+img{
+  max-width: 90%;
+}
+
+section{
+  /*padding: 30px;*/
+  margin-top: 160px;
+  width: 97%;
+  margin-left: 2%;
+}
+
+/*#profile-image{
+  width: 400px;
+}*/
+
+#intro1{
+  flex-basis: 40%;
+  height: em(290px);
+  margin-bottom: em(30px);
+
+}
+p.intro2 {
+    margin-top: 16px;
+    flex-basis: 75%;
+}
+
+
+
+.cardflex {
+    flex-basis: 33%;
+}
+
+
+div.footer-nav {
+  @include flex;
+  @include flex_row;
+  }
+
+.name-foot {
+	margin-top: -62px;
+	color: brown;
+  font-size: 20px;
+}
+
+.footer-nav > ul{
+  font-size: 20px;
+
+}
+.top {
+    display: none;
+}
+
+a{
+  text-decoration: none;
+  color: brown;
+}
+
+#phone{
+  font-weight: 800;
+}
+
+#email{
+    font-weight: 800;
+}
+
+.footer-nav {
+	  font-weight: 600;
+	  margin-right: 10px;
+	  @include flex_justify_end;
+}
+
+
+}

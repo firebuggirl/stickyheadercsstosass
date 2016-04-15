@@ -1,0 +1,47 @@
+#toggle{
+  right: 0;
+	top: 0;
+	height: 48px;
+  width: 48px;
+  border-radius: 50%;
+	position: absolute;
+  margin-right: 10px;
+  @media #{$mobile_small}{
+    margin-right: 1.5px;
+    width: 42px;
+    height:42px;
+  }
+}
+#header{
+  @include grey_ltr;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding-left: 0;
+  z-index: 10;
+}
+
+div.name{
+  @extend %centered;
+
+}
+.name{
+  @include text(25px, NULL, 800, $color: $red); /* CSS validator says "NULL" not valid, but will not work otherwise */
+  margin-top: 10px;
+
+}
+
+.main-nav .nav{
+
+     > li {
+    padding-bottom: 30px;
+  }
+   @include bp(tablet){
+      ul.nav {
+        @include flex;
+        @include flex_row;
+        @include flex_justify_center;
+    }
+  }
+}

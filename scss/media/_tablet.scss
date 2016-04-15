@@ -1,0 +1,95 @@
+/*Media queries*/
+
+ @include bp(tablet){
+
+  .name {
+	text-align: center;
+
+}
+
+/*toggle button*/
+#toggle{
+  display: none;
+
+}
+/*empty div*/
+#toggle_class{
+  display: none;
+}
+
+ul.nav {
+    @include flex;
+    @include flex_row;
+    @include flex_justify_center;
+}
+.nav > li{
+  padding-right: 15px;
+}
+
+
+section{
+    @include flex;
+    @include flex_row_reverse;
+    margin-top: 180px;
+    padding: em(10px);
+}
+
+#intro1{
+    /*@include flex_basis_100;*/
+    width: 50%;
+    height: em(260px);
+    margin-bottom: em(28px);
+    margin-right: em(10px);
+}
+
+
+.intro2{
+    /*margin-top: 55px;*/
+    text-align: left;
+    @include flex_basis_100;
+    @include flex_align_start;
+}
+
+img#profile-image{
+    margin-top: -.3px;
+}
+
+.portfolio{
+    font-size: 12px;
+}
+
+.card{
+    @include flex;
+    @include flex_justify_space_around;
+    @include flex-wrap;
+}
+
+
+.cardflex {
+    @include flex_basis_50;
+    text-align: center;
+}
+
+footer{
+    @include flex_justify_center;
+    margin-top: 40px;
+}
+
+
+p.contact{
+    max-width: 80%;
+}
+
+.end{
+    @include flex;
+    @include flex_justify_space_between;
+    color: brown;
+    margin-top: 20px;
+}
+
+.top > a:nth-child(1){
+   color: brown;
+   margin-right: 2px;
+}
+
+}
