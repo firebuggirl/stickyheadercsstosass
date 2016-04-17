@@ -1,13 +1,13 @@
 @include bp(fullscreen) {
 
   .name {
-  	margin-top: 40px;
+  	margin-top: 45px;
 
   }
 #top{
   @include flex;
   @include flex_align_start;
-  margin-left: em(40px);
+  margin-left: calc(6.6% + 3px);
 }
 #top:hover{
   -webkit-transform: none;
@@ -19,8 +19,7 @@
   @include flex_justify_end;
 	font-weight: 600;
   font-size: 20px;
-	/*margin-right: em(15px);*/
-  margin-left: 30px;
+	margin-right: 2%;
 	margin-top: -65px;
 
 }
@@ -54,7 +53,8 @@ section{
 }*/
 
 #intro1{
-  flex-basis: 40%;
+  /*flex-basis: 40%;*/
+  width: 50%;
   height: em(290px);
   margin-bottom: em(30px);
 
@@ -77,13 +77,16 @@ div.footer-nav {
   }
 
 .name-foot {
-	margin-top: -62px;
+	margin-top: -49px;
+  margin-left: .5%;
 	color: brown;
   font-size: 20px;
 }
 
 .footer-nav > ul{
   font-size: 20px;
+  margin-top: -49px;
+  margin-right: -1%;
 
 }
 .top {
@@ -103,10 +106,18 @@ a{
     font-weight: 800;
 }
 
+#footer-height{
+  max-height: 10vh;
+}
+footer{
+  /*margin-bottom: 2%;*/
+  padding-bottom: 5%;
+}
 .footer-nav {
+    @include flex_justify_end;
 	  font-weight: 600;
 	  margin-right: 10px;
-	  @include flex_justify_end;
+
 }
 
 

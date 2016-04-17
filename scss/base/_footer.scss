@@ -3,12 +3,14 @@ footer{
   @extend %flex_column;
   background-color: #F8FBF5;
   @extend %centered;
+  height: 350px;
+  &:hover{
+   border-bottom: 10px solid $red;
+
+ }
 
 }
-footer:hover{
 
-  border-bottom: 10px solid $red;
-}
 
 h2.contact{
   font-size: 18px;
@@ -20,6 +22,7 @@ p.contact{
   margin-right: 10px;
 }
 
+
 .footer-nav{
   display: none;
 }
@@ -28,6 +31,16 @@ p.contact{
   @extend %flex;
   @extend %flex_row;
   @extend %flex_space_between;
+  @include grey_ltr;
   color: $red;
-  margin-top: 25px;
+  /*margin-top: 5px;*/
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  z-index: 10;
 }

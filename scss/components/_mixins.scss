@@ -20,6 +20,9 @@
   @else if $point == fullscreen {
     @media (min-width: 1024px) { @content; }
   }
+  @else if $point == large_screen {
+    @media (min-width: 1280px) { @content; }
+  }
 }
 
 // Flexbox
@@ -147,4 +150,20 @@
         $lightgrey,
         palette(grey, xx-light) 20%
       );
+}
+
+// Transform effect
+@mixin transform_1{
+  -webkit-transform: scale3d(1.1, 1.1, 1.1);
+   transform: scale3d(1.1, 1.1, 1.1);
+}
+
+//Transition effect
+// Ex include:   @include transition(all .5s ease);
+@mixin transition($trans...) {
+  -webkit-transition: $trans;
+  -moz-transition: $trans;
+  -ms-transition: $trans;
+  -o-transition: $trans;
+  transition: $trans;
 }

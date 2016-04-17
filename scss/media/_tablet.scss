@@ -72,9 +72,24 @@ img#profile-image{
 
 footer{
     @include flex_justify_center;
-    margin-top: 40px;
+    margin-bottom: 8%;
+
 }
 
+.footer-nav{
+  @include grey_ltr;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height:30px;
+   width:100%;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 5%;
+padding-bottom: 2%;
+  z-index: 10;
+}
 
 p.contact{
     max-width: 80%;
@@ -84,7 +99,7 @@ p.contact{
     @include flex;
     @include flex_justify_space_between;
     color: brown;
-    margin-top: 20px;
+
 }
 
 .top > a:nth-child(1){
