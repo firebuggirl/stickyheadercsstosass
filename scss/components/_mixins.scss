@@ -133,11 +133,11 @@
 
 /* Top down grey to white color gradient */
 @mixin gradient_grey_top{
-  -webkit-background: linear-gradient($lightergrey, transparent 7%),
+ -webkit-background: linear-gradient($lightergrey, transparent 7%),
  linear-gradient(90deg, $lightergrey, transparent),
  #fff;
  background: linear-gradient($lightergrey, transparent 7%),
-  linear-gradient(0deg, $lightergrey, transparent),
+ linear-gradient(0deg, $lightergrey, transparent),
   #fff;
 }
 
@@ -166,4 +166,34 @@
   -ms-transition: $trans;
   -o-transition: $trans;
   transition: $trans;
+}
+
+@mixin mobile_right_toggle{
+  right: 0;
+  top: 0;
+  height: 48px;
+  width: 48px;
+  position: absolute;
+}
+@mixin wrapper_90{
+  max-width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+@mixin fixed_header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+}
+@mixin fixed_footer_nav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding-left: 5%;
+  padding-right: 5%;
+  z-index: 10;
 }

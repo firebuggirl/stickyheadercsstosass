@@ -4,9 +4,7 @@
 
 
 #wrapper{
-  max-width: 90%;
-  margin-left: 5%;
-  margin-right: 5%;
+  @include wrapper_90;
 
 }
 
@@ -32,13 +30,13 @@ img{
 
 
 section {
+    @extend %flex;
+    @extend %flex_column;
+    @extend %flex_align_items_center;
     background-color: #F8FBF5;
     border-top: 6px solid $red;
     line-height: ($base__line/$base__font-size);/* Calculate line height based on font-size*/
     margin-top: 300px;
-    @extend %flex;
-    @extend %flex_column;
-    @extend %flex_align_items_center;
     &:hover{
         border-top: 10px solid $red;
     }

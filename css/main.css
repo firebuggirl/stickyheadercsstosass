@@ -428,14 +428,14 @@ each directive (in mixins partial) to dynamically create a class name for each k
   top: 0;
   height: 48px;
   width: 48px;
-  border-radius: 50%;
   position: absolute;
-  margin-right: 10px; }
+  border-radius: 50%;
+  margin-right: 0.625em; }
   @media (max-width: 320px) {
     #toggle {
-      margin-right: 1.5px;
-      width: 42px;
-      height: 42px; } }
+      margin-right: 0.09375em;
+      width: 2.625em;
+      height: 2.625em; } }
 
 #header {
   background-color: whitesmoke;
@@ -444,8 +444,8 @@ each directive (in mixins partial) to dynamically create a class name for each k
   top: 0;
   left: 0;
   right: 0;
-  padding-left: 0;
-  z-index: 10; }
+  z-index: 10;
+  padding-left: 0; }
 
 .name {
   font-size: 25px;
@@ -492,9 +492,9 @@ Classes created:
 
 body {
   background-color: whitesmoke;
-  /* From line 60 _colors.scss -Color Palette Modifiers*/
-  background-color: whitesmoke;
   background-image: linear-gradient(to right, #74828F, whitesmoke 20%);
+  background-color: whitesmoke;
+  /* From line 60 _colors.scss -Color Palette Modifiers*/
   line-height: 1.5;
   /* Calculate line height based on font-size*/ }
   body a {
@@ -588,7 +588,8 @@ p {
 
 footer {
   background-color: #F8FBF5;
-  height: 350px; }
+  height: 350px;
+  border-bottom: 6px solid #cc0a0a; }
   footer:hover {
     border-bottom: 10px solid #cc0a0a; }
 
@@ -607,17 +608,16 @@ p.contact {
 .end {
   background-color: whitesmoke;
   background-image: linear-gradient(to right, #74828F, whitesmoke 20%);
-  color: #cc0a0a;
-  /*margin-top: 5px;*/
   position: fixed;
   bottom: 0;
   left: 0;
   right: 0;
   padding-left: 5%;
   padding-right: 5%;
+  z-index: 10;
+  color: #cc0a0a;
   padding-top: 2%;
-  padding-bottom: 2%;
-  z-index: 10; }
+  padding-bottom: 2%; }
 
 /*Media queries*/
 @media (min-width: 768px) {
@@ -697,13 +697,11 @@ p.contact {
     bottom: 0;
     left: 0;
     right: 0;
-    height: 30px;
-    width: 100%;
     padding-left: 5%;
     padding-right: 5%;
+    z-index: 10;
     padding-top: 5%;
-    padding-bottom: 2%;
-    z-index: 10; }
+    padding-bottom: 2%; }
 
   p.contact {
     max-width: 80%; }
@@ -757,16 +755,11 @@ p.contact {
     max-width: 90%; }
 
   section {
-    /*padding: 30px;*/
     margin-top: 160px;
     width: 97%;
     margin-left: 2%; }
 
-  /*#profile-image{
-    width: 400px;
-  }*/
   #intro1 {
-    /*flex-basis: 40%;*/
     width: 50%;
     height: 18.125em;
     margin-bottom: 1.875em; }
@@ -820,7 +813,6 @@ p.contact {
     max-height: 10vh; }
 
   footer {
-    /*margin-bottom: 2%;*/
     padding-bottom: 5%; }
 
   .footer-nav {

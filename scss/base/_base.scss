@@ -19,8 +19,8 @@ Classes created:
 
 
 body{
-  background-color: palette(grey, xx-light); /* From line 60 _colors.scss -Color Palette Modifiers*/
   @include grey_ltr;
+  background-color: palette(grey, xx-light); /* From line 60 _colors.scss -Color Palette Modifiers*/
   line-height: ($base__line/$base__font-size);/* Calculate line height based on font-size*/
 
       a{
@@ -35,9 +35,9 @@ body{
         }
     }
 
-    #top:hover{
-      @include link_hover;
-    }
+#top:hover{
+  @include link_hover;
+}
 
 .main-nav {
   @extend %centered;

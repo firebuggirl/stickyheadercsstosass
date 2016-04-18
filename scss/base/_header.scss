@@ -1,26 +1,18 @@
 #toggle{
-  right: 0;
-	top: 0;
-	height: 48px;
-  width: 48px;
+  @include mobile_right_toggle;
   border-radius: 50%;
-	position: absolute;
-  margin-right: 10px;
+  margin-right: em(10px);
   @media #{$mobile_small}{
-    margin-right: 1.5px;
-    width: 42px;
-    height:42px;
+    margin-right: em(1.5px);
+    width: em(42px);
+    height: em(42px);
   }
 }
 #header{
   @include grey_ltr;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-
+  @include fixed_header;
   padding-left: 0;
-  z-index: 10;
+
 }
 
 div.name{
