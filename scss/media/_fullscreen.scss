@@ -77,16 +77,22 @@ div.footer-nav {
   }
 
 .name-foot {
-	margin-top: -49px;
+	margin-top: -47px;
   margin-left: .5%;
 	color: brown;
   font-size: 20px;
+  @include bp(large_screen){
+    margin-top: -60px;
+  }
 }
 
 .footer-nav > ul{
   font-size: 20px;
-  margin-top: -49px;
+  margin-top: -47px;
   margin-right: -1%;
+  @include bp(large_screen){
+    margin-top: -60px;
+  }
 
 }
 .top {

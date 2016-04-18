@@ -785,16 +785,24 @@ p.contact {
     -webkit-flex-direction: row; }
 
   .name-foot {
-    margin-top: -49px;
+    margin-top: -47px;
     margin-left: .5%;
     color: brown;
-    font-size: 20px; }
+    font-size: 20px; } }
+  @media (min-width: 1024px) and (min-width: 1280px) {
+    .name-foot {
+      margin-top: -60px; } }
 
+@media (min-width: 1024px) {
   .footer-nav > ul {
     font-size: 20px;
-    margin-top: -49px;
-    margin-right: -1%; }
+    margin-top: -47px;
+    margin-right: -1%; } }
+  @media (min-width: 1024px) and (min-width: 1280px) {
+    .footer-nav > ul {
+      margin-top: -60px; } }
 
+@media (min-width: 1024px) {
   .top {
     display: none; }
 
