@@ -14,9 +14,16 @@
 }
 /*empty div*/
 #toggle_class{
+  margin-bottom: 0px;
   display: none;
 }
+.main-nav .nav{
 
+     > li {
+
+    display: flex;
+  }
+}
 ul.nav {
     @include flex;
     @include flex_row;
@@ -73,7 +80,7 @@ img#profile-image{
 
 footer{
     @include flex_justify_center;
-    
+
 
 }
 

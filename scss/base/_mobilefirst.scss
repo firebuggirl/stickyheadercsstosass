@@ -24,7 +24,7 @@ img{
 #toggle_class{
   content: "";
   height: 0px;
-  margin-top: -170px;
+  margin-bottom: 300px;
   display: none;
 }
 
@@ -36,7 +36,7 @@ section {
     background-color: #F8FBF5;
     border-top: 6px solid $red;
     line-height: ($base__line/$base__font-size);/* Calculate line height based on font-size*/
-    margin-top: 300px;
+    margin-top: 110px;
     &:hover{
         border-top: 10px solid $red;
     }
@@ -76,6 +76,6 @@ p{
   flex-basis: 90%;
   &:hover{
     @include transform_1;
-  
+
   }
 }

@@ -456,7 +456,8 @@ each directive (in mixins partial) to dynamically create a class name for each k
   margin-top: 10px; }
 
 .main-nav .nav > li {
-  padding-bottom: 30px; }
+  padding-bottom: 30px;
+  display: none; }
 @media (min-width: 768px) {
   .main-nav .nav ul.nav {
     display: flex;
@@ -550,7 +551,7 @@ img {
 #toggle_class {
   content: "";
   height: 0px;
-  margin-top: -170px;
+  margin-bottom: 300px;
   display: none; }
 
 section {
@@ -558,7 +559,7 @@ section {
   border-top: 6px solid #cc0a0a;
   line-height: 1.5;
   /* Calculate line height based on font-size*/
-  margin-top: 300px; }
+  margin-top: 110px; }
   section:hover {
     border-top: 10px solid #cc0a0a; }
 
@@ -641,7 +642,11 @@ p.contact {
 
   /*empty div*/
   #toggle_class {
+    margin-bottom: 0px;
     display: none; }
+
+  .main-nav .nav > li {
+    display: flex; }
 
   ul.nav {
     display: flex;

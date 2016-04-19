@@ -17,6 +17,11 @@
   },
   "homepage": "https://github.com/firebuggirl/sassconversion#readme",
   "dependencies": {
+    "gulp": "file:gulp",
     "gulp-concat": "^2.6.0"
+  },
+  "devDependencies": {
+    "concat": "0.0.1-security",
+    "gulp": "file:gulp"
   }
 }

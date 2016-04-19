@@ -29,6 +29,7 @@ div.name{
 
      > li {
     padding-bottom: 30px;
+    display: none;
   }
    @include bp(tablet){
       ul.nav {

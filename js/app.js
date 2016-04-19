@@ -1412,35 +1412,30 @@ window.Modernizr = (function( window, document, undefined ) {
 
 
 
-//  $(document).ready(function () {
-
-//	$('#toggle-view ul').click(function () {
-
-	//	var text = $(this).children('li.panel');
-
-	//	if (text.is(':hidden')) {
-//			text.slideDown('200');
-	//		$(this).children('#toggle').html('-');
-//		} else {
-	//		text.slideUp('200');
-		//	$(this).children('#toggle').html('+');
-	//	}
-
-//	});
-
-//});
-
 
 
 $(document).ready(function () {
 
 $('#toggle').click(function () {
 
- $('li').toggle("slow");
+ $('.main-nav ul li').toggle("slow");
 
  $('#toggle_class').toggle("slow");
 
+});
+});
 
-  });
 
+$(window).resize(function(){
+	if(window.innerWidth > 768) {
+		$(".main-nav ul li").show();
+    $('#toggle_class').hide();
+	}
+});
+
+$(window).resize(function(){
+	if(window.innerWidth < 768) {
+    $('.main-nav ul li').hide();
+    $('#toggle_class').hide();
+	}
 });
