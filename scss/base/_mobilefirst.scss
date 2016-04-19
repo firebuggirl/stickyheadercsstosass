@@ -47,6 +47,7 @@ p{
   @include text(1em, 1.4, lighter);
   max-width: 90%;
   margin-left: 10px;
+  font-size: 18px;
 }
 #intro1{
   @include flex_align_center;
@@ -70,8 +71,11 @@ p{
 
 }
 
-
 .cardflex{
   @extend %centered;
   flex-basis: 90%;
+  &:hover{
+    @include transform_1;
+  
+  }
 }

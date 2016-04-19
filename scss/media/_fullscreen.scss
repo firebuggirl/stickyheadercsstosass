@@ -1,13 +1,12 @@
 @include bp(fullscreen) {
 
-  .name {
-  	margin-top: 45px;
 
-  }
 #top{
   @include flex;
   @include flex_align_start;
-  margin-left: calc(6.6% + 3px);
+  /*margin-left: calc(6.6% + 3px);*/
+  margin-left: 5.5%;
+  margin-top: 60px;
 }
 #top:hover{
   -webkit-transform: none;
@@ -19,15 +18,18 @@
   @include flex_justify_end;
 	font-weight: 600;
   font-size: 20px;
-	margin-right: 2%;
+	/*margin-right: 2%;*/
 	margin-top: -65px;
+  @include bp(large_screen){
+    margin-right: 2%;
+  }
 
 }
 
 .main-nav .nav > li {
-	padding-right: 15px;
-	padding-left: 20px;
-  margin-top: 10px;
+	/*padding-right: 15px;*/
+	padding-left: 10px;
+  /*margin-top: 10px;*/
 }
 
 ul.nav {
@@ -38,13 +40,11 @@ ul.nav {
   display: none;
 }
 img{
-  max-width: 90%;
+   max-width: 90%;
 }
 
 section{
   margin-top: 160px;
-  width: 97%;
-  margin-left: 2%;
 }
 
 
@@ -52,6 +52,11 @@ section{
   width: 50%;
   height: em(290px);
   margin-bottom: em(30px);
+  @include bp(large_screen){
+    width: 40%;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
 
 }
 p.intro2 {
@@ -73,7 +78,7 @@ div.footer-nav {
 
 .name-foot {
   margin-top: -47px;
-  margin-left: .5%;
+  /*margin-left: .5%;*/
   color: brown;
   font-size: 20px;
   @include bp(large_screen){
@@ -81,14 +86,6 @@ div.footer-nav {
     }
   }
 
-.footer-nav > ul{
-  font-size: 20px;
-  margin-top: -47px;
-  margin-right: -1%;
-  @include bp(large_screen){
-    margin-top: -60px;
-   }
-  }
 
 .top {
     display: none;
@@ -116,9 +113,32 @@ footer{
 .footer-nav {
     @include flex_justify_end;
 	  font-weight: 600;
-	  margin-right: 10px;
-
 }
+
+.footer-nav > ul{
+  font-size: 20px;
+  margin-top: -47px;
+  margin-right: -1.5%;
+  @include bp(large_screen){
+    margin-top: -60px;
+    margin-right: -.8%;
+   }
+  }
+
+  #wrapper{
+    @include bp(large_screen){
+      #wrapper{
+        @include wrapper_95;
+      }
+      .name{
+        margin-left: 5.25%;
+      }
+      #top{
+        margin-left: 0;
+      }
+
+    }
+  }
 
 
 }

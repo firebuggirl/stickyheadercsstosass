@@ -524,6 +524,11 @@ body {
   color: #cc0a0a;
   font-size: 13px; }
 
+p {
+  font-family: "Calisto MT", "Bookman Old Style", Bookman, "Goudy Old Style", Garamond, "Hoefler Text", "Bitstream Charter", Georgia, serif; }
+  p:hover {
+    color: #7E272D; }
+
 #top:hover {
   -webkit-transform: scale3d(1.1, 1.1, 1.1);
   transform: scale3d(1.1, 1.1, 1.1); }
@@ -562,7 +567,8 @@ p {
   line-height: 1.4;
   font-weight: lighter;
   max-width: 90%;
-  margin-left: 10px; }
+  margin-left: 10px;
+  font-size: 18px; }
 
 #intro1 {
   align-self: center;
@@ -585,22 +591,27 @@ p {
 
 .cardflex {
   flex-basis: 90%; }
+  .cardflex:hover {
+    -webkit-transform: scale3d(1.1, 1.1, 1.1);
+    transform: scale3d(1.1, 1.1, 1.1); }
 
 footer {
   background-color: #F8FBF5;
   height: 350px;
+  margin-bottom: 10%;
   border-bottom: 6px solid #cc0a0a; }
   footer:hover {
     border-bottom: 10px solid #cc0a0a; }
 
 h2.contact {
-  font-size: 18px;
+  font-size: 22px;
   margin-top: 45px; }
 
 p.contact {
   align-self: center;
   -moz-align-self: center;
-  margin-right: 10px; }
+  margin-right: 10px;
+  font-size: 20px; }
 
 .footer-nav {
   display: none; }
@@ -687,8 +698,7 @@ p.contact {
 
   footer {
     justify-content: center;
-    -webkit-justify-content: center;
-    margin-bottom: 8%; }
+    -webkit-justify-content: center; }
 
   .footer-nav {
     background-color: whitesmoke;
@@ -711,21 +721,20 @@ p.contact {
     -moz-display: flex;
     justify-content: space-between;
     -webkit-justify-content: space-between;
-    color: brown; }
+    color: #cc0a0a; }
 
   .top > a:nth-child(1) {
-    color: brown;
+    color: #cc0a0a;
     margin-right: 2px; } }
 @media (min-width: 1024px) {
-  .name {
-    margin-top: 45px; }
-
   #top {
     display: flex;
     -moz-display: flex;
     align-self: flex-start;
     -moz-align-self: flex-start;
-    margin-left: calc(6.6% + 3px); }
+    /*margin-left: calc(6.6% + 3px);*/
+    margin-left: 5.5%;
+    margin-top: 60px; }
 
   #top:hover {
     -webkit-transform: none;
@@ -736,13 +745,17 @@ p.contact {
     -moz-justify-content: flex-end;
     font-weight: 600;
     font-size: 20px;
-    margin-right: 2%;
-    margin-top: -65px; }
+    /*margin-right: 2%;*/
+    margin-top: -65px; } }
+  @media (min-width: 1024px) and (min-width: 1280px) {
+    .main-nav .nav {
+      margin-right: 2%; } }
 
+@media (min-width: 1024px) {
   .main-nav .nav > li {
-    padding-right: 15px;
-    padding-left: 20px;
-    margin-top: 10px; }
+    /*padding-right: 15px;*/
+    padding-left: 10px;
+    /*margin-top: 10px;*/ }
 
   ul.nav {
     flex-direction: row;
@@ -755,15 +768,19 @@ p.contact {
     max-width: 90%; }
 
   section {
-    margin-top: 160px;
-    width: 97%;
-    margin-left: 2%; }
+    margin-top: 160px; }
 
   #intro1 {
     width: 50%;
     height: 18.125em;
-    margin-bottom: 1.875em; }
+    margin-bottom: 1.875em; } }
+  @media (min-width: 1024px) and (min-width: 1280px) {
+    #intro1 {
+      width: 40%;
+      margin-left: 20px;
+      margin-right: 20px; } }
 
+@media (min-width: 1024px) {
   p.intro2 {
     margin-top: 16px;
     flex-basis: 75%; }
@@ -779,20 +796,11 @@ p.contact {
 
   .name-foot {
     margin-top: -47px;
-    margin-left: .5%;
+    /*margin-left: .5%;*/
     color: brown;
     font-size: 20px; } }
   @media (min-width: 1024px) and (min-width: 1280px) {
     .name-foot {
-      margin-top: -60px; } }
-
-@media (min-width: 1024px) {
-  .footer-nav > ul {
-    font-size: 20px;
-    margin-top: -47px;
-    margin-right: -1%; } }
-  @media (min-width: 1024px) and (min-width: 1280px) {
-    .footer-nav > ul {
       margin-top: -60px; } }
 
 @media (min-width: 1024px) {
@@ -818,7 +826,25 @@ p.contact {
   .footer-nav {
     justify-content: flex-end;
     -moz-justify-content: flex-end;
-    font-weight: 600;
-    margin-right: 10px; } }
+    font-weight: 600; }
+
+  .footer-nav > ul {
+    font-size: 20px;
+    margin-top: -47px;
+    margin-right: -1.5%; } }
+  @media (min-width: 1024px) and (min-width: 1280px) {
+    .footer-nav > ul {
+      margin-top: -60px;
+      margin-right: -.8%; } }
+
+@media (min-width: 1024px) and (min-width: 1280px) {
+  #wrapper #wrapper {
+    max-width: 95%;
+    margin-left: 2.5%;
+    margin-right: 2.5%; }
+  #wrapper .name {
+    margin-left: 5.25%; }
+  #wrapper #top {
+    margin-left: 0; } }
 
 /*# sourceMappingURL=main.css.map */
