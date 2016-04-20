@@ -14,7 +14,7 @@ $('#toggle').click(function () {
 
 
 $(window).resize(function(){
-	if(window.innerWidth > 768) {
+	if(window.innerWidth >= 750) {
 		$(".main-nav ul li").show();
     $('#toggle_class').hide();
 	}

@@ -108,8 +108,10 @@ a{
   max-height: 10vh;
 }
 footer{
-  padding-bottom: 5%;
+  /*padding-bottom: 5%;*/
 }
+
+
 .footer-nav {
     @include flex_justify_end;
 	  font-weight: 600;

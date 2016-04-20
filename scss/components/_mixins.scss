@@ -57,6 +57,10 @@
   flex-basis: 100%;
   -webkit-flex-basis: 100%;
 }
+@mixin flex_basis_60{
+  flex-basis: 60%;
+  -webkit-flex-basis: 60%;
+}
 
 @mixin flex_basis_50{
   flex-basis: 50%;

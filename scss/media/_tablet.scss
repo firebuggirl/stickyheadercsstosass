@@ -44,7 +44,6 @@ section{
 #intro1{
     /*@include flex_basis_100;*/
     width: 50%;
-    height: em(260px);
     margin-bottom: em(28px);
     margin-right: em(10px);
 }
@@ -53,7 +52,7 @@ section{
 .intro2{
     /*margin-top: 55px;*/
     text-align: left;
-    @include flex_basis_100;
+    @include flex_basis_60;
     @include flex_align_start;
 }
 
@@ -80,6 +79,7 @@ img#profile-image{
 
 footer{
     @include flex_justify_center;
+    margin-bottom: 10%;
 
 
 }
@@ -93,6 +93,12 @@ footer{
 
 p.contact{
     max-width: 80%;
+    margin-top: auto;
+    padding-bottom: 0px;
+}
+
+.contact{
+    padding-bottom: 10px;
 }
 
 .end{
