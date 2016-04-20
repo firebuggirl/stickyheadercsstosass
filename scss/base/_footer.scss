@@ -4,7 +4,7 @@ footer{
   @extend %centered;
   background-color: #F8FBF5;
   height: 350px;
-  margin-bottom: 10%;
+  margin-bottom: 15%;
   border-bottom: 6px solid $red;
   &:hover{
    border-bottom: 10px solid $red;
@@ -16,13 +16,15 @@ footer{
 
 h2.contact{
   font-size: 22px;
-  margin-top: 45px;
+  margin-top: 20px;
+  margin-bottom: 0px;
 }
 p.contact{
   @extend %centered;
   @include flex_align_center;
   margin-right: 10px;
   font-size: 20px;
+  padding-bottom: -15px;
 }
 
 

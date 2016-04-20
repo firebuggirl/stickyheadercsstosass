@@ -599,20 +599,22 @@ p {
 footer {
   background-color: #F8FBF5;
   height: 350px;
-  margin-bottom: 10%;
+  margin-bottom: 15%;
   border-bottom: 6px solid #cc0a0a; }
   footer:hover {
     border-bottom: 10px solid #cc0a0a; }
 
 h2.contact {
   font-size: 22px;
-  margin-top: 45px; }
+  margin-top: 20px;
+  margin-bottom: 0px; }
 
 p.contact {
   align-self: center;
   -moz-align-self: center;
   margin-right: 10px;
-  font-size: 20px; }
+  font-size: 20px;
+  padding-bottom: -15px; }
 
 .footer-nav {
   display: none; }
