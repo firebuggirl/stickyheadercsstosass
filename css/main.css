@@ -680,13 +680,11 @@ p.contact {
     padding: 0.625em; }
 
   #intro1 {
-    /*@include flex_basis_100;*/
     width: 50%;
     margin-bottom: 1.75em;
     margin-right: 0.625em; }
 
   .intro2 {
-    /*margin-top: 55px;*/
     text-align: left;
     flex-basis: 60%;
     -webkit-flex-basis: 60%;
@@ -754,7 +752,6 @@ p.contact {
     -moz-display: flex;
     align-self: flex-start;
     -moz-align-self: flex-start;
-    /*margin-left: calc(6.6% + 3px);*/
     margin-left: 5.5%;
     margin-top: 60px; }
 
@@ -767,7 +764,6 @@ p.contact {
     -moz-justify-content: flex-end;
     font-weight: 600;
     font-size: 20px;
-    /*margin-right: 2%;*/
     margin-top: -65px; } }
   @media (min-width: 1024px) and (min-width: 1280px) {
     .main-nav .nav {
@@ -775,9 +771,7 @@ p.contact {
 
 @media (min-width: 1024px) {
   .main-nav .nav > li {
-    /*padding-right: 15px;*/
-    padding-left: 10px;
-    /*margin-top: 10px;*/ }
+    padding-left: 10px; }
 
   ul.nav {
     flex-direction: row;
@@ -818,7 +812,6 @@ p.contact {
 
   .name-foot {
     margin-top: -47px;
-    /*margin-left: .5%;*/
     color: brown;
     font-size: 20px; } }
   @media (min-width: 1024px) and (min-width: 1280px) {
@@ -841,9 +834,6 @@ p.contact {
 
   #footer-height {
     max-height: 10vh; }
-
-  footer {
-    /*padding-bottom: 5%;*/ }
 
   .footer-nav {
     justify-content: flex-end;

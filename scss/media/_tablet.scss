@@ -42,7 +42,6 @@ section{
 }
 
 #intro1{
-    /*@include flex_basis_100;*/
     width: 50%;
     margin-bottom: em(28px);
     margin-right: em(10px);
@@ -50,7 +49,6 @@ section{
 
 
 .intro2{
-    /*margin-top: 55px;*/
     text-align: left;
     @include flex_basis_60;
     @include flex_align_start;

@@ -4,7 +4,6 @@
 #top{
   @include flex;
   @include flex_align_start;
-  /*margin-left: calc(6.6% + 3px);*/
   margin-left: 5.5%;
   margin-top: 60px;
 }
@@ -18,7 +17,6 @@
   @include flex_justify_end;
 	font-weight: 600;
   font-size: 20px;
-	/*margin-right: 2%;*/
 	margin-top: -65px;
   @include bp(large_screen){
     margin-right: 2%;
@@ -27,9 +25,7 @@
 }
 
 .main-nav .nav > li {
-	/*padding-right: 15px;*/
 	padding-left: 10px;
-  /*margin-top: 10px;*/
 }
 
 ul.nav {
@@ -78,7 +74,6 @@ div.footer-nav {
 
 .name-foot {
   margin-top: -47px;
-  /*margin-left: .5%;*/
   color: brown;
   font-size: 20px;
   @include bp(large_screen){
@@ -107,10 +102,6 @@ a{
 #footer-height{
   max-height: 10vh;
 }
-footer{
-  /*padding-bottom: 5%;*/
-}
-
 
 .footer-nav {
     @include flex_justify_end;
