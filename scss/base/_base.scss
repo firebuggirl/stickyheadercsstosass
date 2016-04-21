@@ -44,7 +44,7 @@ body{
   margin-right: em(40px);
 }
   .nav {
-    @include text(18px, NULL, 400);
+    @include text(18px, 1.5, 400);
     list-style-type: none;
         a:hover{
           color: lighten($red, 15%);

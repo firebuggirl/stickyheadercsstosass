@@ -20,7 +20,7 @@ div.name{
 
 }
 .name{
-  @include text(25px, NULL, 800, $color: $red); /* CSS validator says "NULL" not valid, but will not work otherwise */
+  @include text(25px, 1.5, 800, $color: $red); /* CSS validator says "NULL" not valid, but will not work otherwise */
   margin-top: 10px;
 
 }

@@ -47,7 +47,8 @@ section {
 
 p{
   @extend %centered;
-  @include text(1em, 1.4, lighter);
+  @include text(1em, 1.4, light);
+  font-family: $stack-helvetica;
   max-width: 90%;
   margin-left: 10px;
   font-size: 18px;
@@ -58,11 +59,12 @@ p{
 
 }
 .intro2 {
+  @include flex_align_center;
+  @include text(1.25em, 1.4, medium);
 	margin-top: 20px;
 	color: black;
 	padding: 8px 8px;
-  /*margin-right: 10px;*/
-  @include flex_align_center;
+  font-family: $stack-helvetica;
 }
 
 
@@ -74,6 +76,9 @@ p{
 
 }
 
+.card{
+  margin-bottom: em(40px);
+}
 .cardflex{
   @extend %centered;
   flex-basis: 90%;

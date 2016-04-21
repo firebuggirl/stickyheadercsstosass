@@ -449,7 +449,7 @@ each directive (in mixins partial) to dynamically create a class name for each k
 
 .name {
   font-size: 25px;
-  line-height: NULL;
+  line-height: 1.5;
   font-weight: 800;
   color: #cc0a0a;
   /* CSS validator says "NULL" not valid, but will not work otherwise */
@@ -515,7 +515,7 @@ body {
 
 .nav {
   font-size: 18px;
-  line-height: NULL;
+  line-height: 1.5;
   font-weight: 400;
   list-style-type: none; }
   .nav a:hover {
@@ -569,7 +569,8 @@ section {
 p {
   font-size: 1em;
   line-height: 1.4;
-  font-weight: lighter;
+  font-weight: light;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   max-width: 90%;
   margin-left: 10px;
   font-size: 18px; }
@@ -580,18 +581,24 @@ p {
   width: 340px; }
 
 .intro2 {
+  align-self: center;
+  -moz-align-self: center;
+  font-size: 1.25em;
+  line-height: 1.4;
+  font-weight: medium;
   margin-top: 20px;
   color: black;
   padding: 8px 8px;
-  /*margin-right: 10px;*/
-  align-self: center;
-  -moz-align-self: center; }
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
 
 .portfolio {
   font-size: 12px;
   color: #cc0a0a;
   margin-bottom: 30px;
   margin: 40px auto; }
+
+.card {
+  margin-bottom: 2.5em; }
 
 .cardflex {
   flex-basis: 90%; }
@@ -617,7 +624,7 @@ p.contact {
   -moz-align-self: center;
   margin-right: 10px;
   font-size: 20px;
-  padding-bottom: -15px; }
+  margin-bottom: 18px; }
 
 .footer-nav {
   display: none; }
