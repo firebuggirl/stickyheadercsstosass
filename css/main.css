@@ -569,7 +569,7 @@ section {
 p {
   font-size: 1em;
   line-height: 1.4;
-  font-weight: light;
+  font-weight: 300;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   max-width: 90%;
   margin-left: 10px;
@@ -585,9 +585,9 @@ p {
   -moz-align-self: center;
   font-size: 1.25em;
   line-height: 1.4;
-  font-weight: medium;
+  font-weight: 300;
   margin-top: 20px;
-  color: black;
+  color: #000;
   padding: 8px 8px;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
 
@@ -695,7 +695,7 @@ p.contact {
     margin-top: -.3px; }
 
   .portfolio {
-    font-size: 12px; }
+    font-size: 13px; }
 
   .card {
     display: flex;
@@ -812,7 +812,7 @@ p.contact {
 
   .name-foot {
     margin-top: -47px;
-    color: brown;
+    color: #cc0a0a;
     font-size: 20px; } }
   @media (min-width: 1024px) and (min-width: 1280px) {
     .name-foot {
@@ -824,7 +824,7 @@ p.contact {
 
   a {
     text-decoration: none;
-    color: brown; }
+    color: #cc0a0a; }
 
   #phone {
     font-weight: 800; }

@@ -16,7 +16,7 @@
 .main-nav .nav {
   @include flex_justify_end;
 	font-weight: 600;
-  font-size: 20px;
+  font-size: $font-size__large;
 	margin-top: -65px;
   @include bp(large_screen){
     margin-right: 2%;
@@ -74,8 +74,8 @@ div.footer-nav {
 
 .name-foot {
   margin-top: -47px;
-  color: brown;
-  font-size: 20px;
+  color: $red;
+  font-size: $font-size__large;
   @include bp(large_screen){
       margin-top: -60px;
     }
@@ -88,7 +88,7 @@ div.footer-nav {
 
 a{
   text-decoration: none;
-  color: brown;
+  color: $red;
 }
 
 #phone{
@@ -109,7 +109,7 @@ a{
 }
 
 .footer-nav > ul{
-  font-size: 20px;
+  font-size: $font-size__large;
   margin-top: -47px;
   margin-right: -1.5%;
   @include bp(large_screen){

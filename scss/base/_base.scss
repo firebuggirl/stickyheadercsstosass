@@ -53,7 +53,7 @@ body{
 
 .top > a:nth-child(1){
   color: $red;
-  font-size: 13px;
+  font-size: $font-size__small;
 }
 
 p{

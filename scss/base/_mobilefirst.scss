@@ -47,7 +47,7 @@ section {
 
 p{
   @extend %centered;
-  @include text(1em, 1.4, light);
+  @include text(1em, 1.4, $font-weight--light);
   font-family: $stack-helvetica;
   max-width: 90%;
   margin-left: 10px;
@@ -60,9 +60,9 @@ p{
 }
 .intro2 {
   @include flex_align_center;
-  @include text(1.25em, 1.4, medium);
+  @include text(1.25em, 1.4, $font-weight--light);
 	margin-top: 20px;
-	color: black;
+	color: $black;
 	padding: 8px 8px;
   font-family: $stack-helvetica;
 }

@@ -2,7 +2,7 @@ footer{
   @extend %flex;
   @extend %flex_column;
   @extend %centered;
-  background-color: #F8FBF5;
+  background-color: $ivory;
   height: 350px;
   margin-bottom: 15%;
   border-bottom: 6px solid $red;
