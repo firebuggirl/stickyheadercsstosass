@@ -500,6 +500,7 @@ body {
   /* Calculate line height based on font-size*/ }
   body a {
     text-decoration: none; }
+  body .intro2 > a:nth-child(1),
   body .name a,
   body .main-nav a,
   body h2,
